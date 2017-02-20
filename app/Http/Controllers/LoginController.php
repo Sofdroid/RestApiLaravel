@@ -63,7 +63,6 @@ class LoginController extends Controller
                     'DATA' => $logins
             ], 200);
         }
-
     }
     /**
      * Show the form for creating a new resource.

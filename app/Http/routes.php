@@ -31,7 +31,7 @@ Route::group(['middleware' => ['web']], function () {
 });
  
 
-Route::group(['prefix' => 'api/v1'], function () {
+Route::group(['middleware' => ['web']], function () {
 	Route::get ( '/login', 'LoginController@index' );
 	Route::get ( '/login/view/{id}', 'LoginController@show' );
 	Route::get ( '/login/delete/{id}', 'LoginController@destroy' );
